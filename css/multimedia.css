@@ -1,0 +1,58 @@
+video,iframe,audio,h1,h2{
+    width: 100%;
+}
+video,iframe{
+    height: 300px;
+}
+
+section,
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1025px to higher resolution desktops
+*/
+
+@media (min-width: 1025px) {
+
+    section,
+    footer {
+        flex-direction: row;
+    }
+
+    section div {
+        width: 30%;
+    }
+
+    #footer div {
+        width: 25%;
+    }
+}
+
+
+/* 
+    ##Device = Tablets
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    section,
+    footer {
+        flex-direction: row;
+    }
+
+    section div {
+        width: 40%;
+    }
+
+    #footer div {
+        width: 25%;
+    }
+
+}

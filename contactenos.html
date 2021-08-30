@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rolando Sequeira Víctor">
+    <meta name="description" content="Página contáctenos, para realziar preguntas, cotizaciones, reportes">
+    <meta name="keywords" content="Costa Rica Comics, formulario contacto">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts/fuentes.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/contactenos.css">
+    <title>Comic App - Contáctenos</title>
+</head>
+
+<body>
+    <!--contenido de la página-->
+    <header>
+        <!--menu principal de la página-->
+        <nav>
+            <a href="index.html"><img width="100" src="img/logo.png" alt="Logo de la empresa"></a>
+            <ul>
+                <li><a href="index.html">Principal</a></li>
+                <li><a href="acercaNosotros.html">Acerca de Nosotros</a></li>
+                <li><a href="definiciones.html">Definiciones</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a class="active" href="contactenos.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--información principal de la página-->
+    <main>
+        <h1>Contáctenos</h1>
+        <section id="contacto">
+            <div>
+                <form action="enviarCorreo.html" method="POST">
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input pattern="|^[a-zA-Z]+(\s*[a-zA-Z]*)*[a-zA-Z]+$|" title="Debe ingresar solo letras"
+                            required type="text" name="nombre" id="nombre">
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono</label>
+                        <input pattern="[0-9]{4}-[0-9]{4}" title="Formato: 8885-9663" required type="tel"
+                            name="telefono" id="telefono">
+                    </div>
+                    <div>
+                        <label for="Email">Email</label>
+                        <input pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+                            title="Debe ingresar un formato válido" required type="email" name="telefono" id="telefono">
+                    </div>
+                    <div>
+                        <label for="asunto">Asunto</label>
+                        <select name="asunto" id="asunto">
+                            <option value="1">Consulta</option>
+                            <option value="2">Cotización</option>
+                            <option value="3">Garantía</option>
+                            <option value="4">Reclamo</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje</label> <br>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+            <address>
+                <dl>
+                    <dt>Horario</dt>
+                    <dd>
+                        Lunes a sábado: 10:00 a.m. a 9:00 p.m.
+                        <br>
+                        Domingo: 10:00 a.m. a 8:00 p.m
+                    </dd>
+                    <dt>Dirección</dt>
+                    <dd>Avenida Centenario, Calle 12, Mall Alejandría, segundo nivel, local 18</dd>
+                    <dt>Teléfono </dt>
+                    <dd> <a href="tel:+50612345678">1234-5678</a> </dd>
+                    <dt>Email</dt>
+                    <dd><a href="mailto:comicAppcr@gmail.com">comicAppcr@gmail.com</a></dd>
+                    <dt>Whatsapp</dt>
+                    <dd> <a target="_blank"
+                            href="https://wa.me/50688286821?text=Hola%20tengo%20una%20consulta">3344-6677</a> </dd>
+                    <dt>Skype</dt>
+                    <dd><a href="skype:comicAppcr">comicAppcr</a></dd>
+                </dl>
+            </address>
+            <div class="mapa">
+                <!--mapa de google-->
+                <h3>San Pedro</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.0150601058986!2d-84.05622348503681!3d9.932703376914287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e383fea68ba7%3A0x2eb8f9854ef84db6!2sCasa%20Manga!5e0!3m2!1ses!2scr!4v1625190153930!5m2!1ses!2scr"
+                     style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <h3>Heredia</h3>
+                <iframe  frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-84.05562132596971%2C9.931846036113152%2C-84.05311077833177%2C9.933682229573096&amp;layer=mapnik"
+                    style="border: 0"></iframe>
+                <h3>Avenida Colón</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.9826294558225!2d-84.09710218503686!3d9.93540297686877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e35694cf099b%3A0x6e78de06f05896d4!2sKaboom!5e0!3m2!1ses!2scr!4v1625190459198!5m2!1ses!2scr"
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+        <aside></aside>
+    </main>
+
+    <!--pie del cuerpo-->
+    <footer>
+        <div>
+            <h4>Categorías</h4>
+            <ul>
+                <li><a href="">Calcomanías</a></li>
+                <li><a href="">Manga</a></li>
+                <li><a href="">Comic</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Ayuda</h4>
+            <ul>
+                <li><a href="">Politica de Privacidad</a></li>
+                <li><a href="">Preguntas Frecuentes</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Sobre Nosotros</h4>
+            <ul>
+                <li><a href="acercaNosotros.html#origen">Origenes</a></li>
+                <li><a href="acercaNosotros.html#consolidacion">Consolidación</a></li>
+                <li><a href="acercaNosotros.html#colaboradores">Colaboradores</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Redes Sociales</h4>
+            <ul>
+                <li><a target="_blank" href="https://www.facebook.com/CasaManga">Facebook</a></li>
+                <li><a target="_blank" href="http://www.twitter.com">Twitter</a></li>
+                <li><a target="_blank" href="http://www.instagram.com">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+h1,p{
+    width: 100%;
+}
+main{
+    padding: 25px;
+}
+
+main img{
+    width: 100%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+
+}
+main div{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+main div button{
+    
+    border: solid 2px #FB9D07;
+    color:#FB9D07;
+    background-color: white;
+    padding: 10px;
+}
+
+footer,main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1025px to higher resolution desktops
+*/
+
+@media (min-width: 1025px) {
+
+    main,
+    footer {
+        flex-direction: row;
+    }
+
+    main div {
+        width: 25%;
+    }
+
+    #footer div {
+        width: 25%;
+    }
+}
+
+
+/* 
+    ##Device = Tablets
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    main,
+    footer {
+        flex-direction: row;
+    }
+
+    main div {
+        width: 40%;
+    }
+
+    #footer div {
+        width: 25%;
+    }
+
+}

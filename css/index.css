@@ -1,0 +1,90 @@
+#categorias a {
+    text-decoration: none;
+    color: black
+}
+
+#categorias a h4 {
+    margin: 15px auto;
+    /*centrar elementos display block*/
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+    border: solid 2px #FFF34F;
+}
+
+h1,
+h2,
+#buscar,
+#categorias {
+    width: 100%;
+}
+
+main img {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+#categorias,
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+
+#telefonos{
+    padding: 20px;
+    text-align: right;
+    color: #FFF34F;
+    background-color: black;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1025px to higher resolution desktops
+*/
+
+@media (min-width: 1025px) {
+
+    #categorias,
+    footer {
+        flex-direction: row;
+    }
+
+    #categorias div {
+        width: 30%;
+    }
+
+    #footer div {
+        width: 25%;
+    }
+}
+
+
+/* 
+    ##Device = Tablets
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #categorias,footer {
+        flex-direction: row;
+    }
+
+    #categorias div {
+        width: 40%;
+    }
+
+    #footer div {
+        width: 40%;
+    }
+
+}

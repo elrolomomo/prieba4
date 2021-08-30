@@ -1,0 +1,117 @@
+<!DOCTYPE html> <!-- comentario - define el tipo de documento -->
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Rolando Sequeira Víctor">
+    <meta name="description" content="Página principal de Comic Con, donde puedes comprar las mejores comic del país">
+    <meta name="keywords" content="Costa Rica, Comics, Manga, Anime, Figuras de acción">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts/fuentes.css">
+    <link rel="stylesheet" href="css/general.css">
+    <title>Comic App</title>
+</head>
+
+<body>
+    <!--contenido de la página-->
+    <header>
+        <!--menu principal de la página-->
+        <nav>
+            <a href="index.html"><img width="100" src="img/logo.png" alt="Logo de la empresa"></a>
+            <ul>
+                <li><a href="index.html">Principal</a></li>
+                <li><a href="acercaNosotros.html">Acerca de Nosotros</a></li>
+                <li><a href="definiciones.html">Definiciones</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="contactenos.html">Contáctenos</a></li>
+                <li><a target="_blank" href="http://www.censa.cr">Censa Tec</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--información principal de la página-->
+    <main>
+        <form action="guardarContacto.html" method="POST">
+            <div>
+                <label for="nombre">nombre</label>
+                <input pattern="|^[a-zA-Z]+(\s*[a-zA-Z]*)*[a-zA-Z]+$|" title="Debe ingresar solo letras" type="text"
+                    name="nombre" id="nombre" required>
+            </div>
+            <div>
+                <label for="apellidos">apellidos</label>
+                <input pattern="|^[a-zA-Z]+(\s*[a-zA-Z]*)*[a-zA-Z]+$|" title="Debe ingresar solo letras" type="text"
+                    name="apellidos" id="apellidos" required>
+            </div>
+            <div>
+                <label for="empresa">empresa</label>
+                <input pattern="|^[a-zA-Z]+(\s*[a-zA-Z]*)*[a-zA-Z]+$|" title="Debe ingresar solo letras" type="text"
+                    name="empresa" id="empresa" required>
+            </div>
+            <div>
+                <label for="tipoTel">Tipo Teléfono</label>
+                <select name="tipoTel" id="tipoTel">
+                    <option value=".">Seleccione</option>
+                    <option value="cel">Celular</option>
+                    <option value="cas">Casa</option>
+                    <option value="tra">Trabajo</option>
+                </select>
+            </div>
+            <div>
+                <label for="telefono">Teléfono</label>
+                <input pattern="[0-9]{4}-[0-9]{4}" title="Formato: 2663-1320" type="tel" name="telefono" id="telefono">
+            </div>
+            <div>
+                <label for="foto">Fotografía</label>
+                <input required accept="image/*" type="file" name="foto" id="foto">
+            </div>
+            <div>
+                <input type="submit" value="Guardar">
+                <input type="reset" value="Limpiar">
+            </div>
+
+
+        </form>
+    </main>
+
+    <!--pie del cuerpo-->
+    <footer>
+        <div>
+            <h4>Categorías</h4>
+            <ul>
+                <li><a href="">Calcomanías</a></li>
+                <li><a href="">Manga</a></li>
+                <li><a href="">Comic</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Ayuda</h4>
+            <ul>
+                <li><a href="">Politica de Privacidad</a></li>
+                <li><a href="">Preguntas Frecuentes</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Sobre Nosotros</h4>
+            <ul>
+                <li><a href="acercaNosotros.html#origen">Origenes</a></li>
+                <li><a href="acercaNosotros.html#consolidacion">Consolidación</a></li>
+                <li><a href="acercaNosotros.html#colaboradores">Colaboradores</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Redes Sociales</h4>
+            <ul>
+                <li><a target="_blank" href="https://www.facebook.com/CasaManga">Facebook</a></li>
+                <li><a target="_blank" href="http://www.twitter.com">Twitter</a></li>
+                <li><a target="_blank" href="http://www.instagram.com">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

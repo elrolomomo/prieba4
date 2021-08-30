@@ -1,0 +1,57 @@
+.r{
+    background-color: red;
+}
+.a{
+    background-color: blue;
+}
+.g{
+    background-color: green;
+}
+.am{
+    background-color: yellow;
+}
+
+section{
+    height: 100px;
+    margin-bottom: 20px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1025px to higher resolution desktops
+*/
+
+@media (min-width: 1025px) {
+    main{
+        flex-direction: row;
+    }
+    main section{
+        width: 30%;
+    }   
+}
+  
+  
+  /* 
+    ##Device = Tablets
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+        main{
+            flex-direction: row;
+        }
+        main section{
+            width: 40%;
+        }
+
+  }
+  
+  

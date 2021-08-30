@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="procesar.php" method="GET">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <!--caja de texto de solo una linea-->
+            <label for="txtNombre">Nombre</label>
+            <input required pattern="|^[a-zA-Z]+(\s*[a-zA-Z]*)*[a-zA-Z]+$|" title="Debe ingresar solo letras" minlength="5" maxlength="20" id="txtNombre" type="text" name="nombre" placeholder="Digite su nombre">
+            <br>
+            <!--caja de texto solo numeros-->
+            <label for="txtEdad">Edad</label>
+            <input id="txtEdad" min="18" max="50" value="18" type="number" name="edad">
+            <br>
+            <!--caja de texto para ingrear email-->
+            <label for="txtEmail">Email</label>
+            <input required pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" title="Digite un email válido" id="txtEmail" type="text" name="email">
+            <br>
+            <!--caja de texto para telefono-->
+            <label for="txtTelefono">Telefono</label>
+            <input required pattern="[0-9]{4}-[0-9]{4}" title="Ejemplo: 8898-5478" id="txtTelefono" type="tel" name="telefono">
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gustos e intereses</legend>
+        
+            <!--caja de texto para password-->
+            <label for="txtClave">Clave</label>
+            <input maxlength="10" id="txtClave" type="password" name="clave">
+            <br>
+            <!--caja de texto para fechas-->
+            <label for="txtFecha">Fecha</label>
+            <input id="txtFecha" type="date" name="fecha">
+            <br>
+            <!--caja de texto oculto-->
+            <label for="txtCampo">Campo Oculto</label>
+            <input id="txtCampo" type="hidden" value="estoy oculto" name="oculto">
+            <br>
+            <!--input para seleccionar archivo-->
+            <label for="imagen">Foto </label>
+            <input id="imagen" type="file" name="foto" accept="image/*">
+            <br>
+            <!--caja texto para buscar-->
+            <label for="txtBuscar">Buscar </label>
+            <input id="txtBuscar" type="search" name="buscar">
+            <br>
+            <!--caja texto multilinea-->
+            <label for="txtDescripcion">Descripcion </label>
+            <textarea minlength="20" name="descripcion" id="txtDescripcion" cols="30" rows="10"></textarea>
+            <br>
+            <!-- Radio buttons -->
+            <h3>Color Favorito</h3>
+            <label for="verde">Verde</label><input id="verde" type="radio" name="color" value="Verde" checked>
+            <label for="rojo">Rojo</label><input id="rojo" type="radio" name="color" value="Rojo">
+            <label for="azul">Azul</label><input id="azul" type="radio" name="color" value="Azul">
+            <br>
+            <!-- Radio buttons -->
+            <h3>Deporte Favorito</h3>
+            <label for="Futbol">Futbol</label><input id="Futbol" type="radio" name="deporte" value="Futbol">
+            <label for="Hiking">Hiking</label><input id="Hiking" type="radio" name="deporte" value="Hiking" checked>
+            <label for="Ciclismo">Ciclismo</label><input id="Ciclismo" type="radio" name="deporte" value="Ciclismo">
+            <br>
+            <!-- Check box -->
+            <h3>Interéses</h3>
+            <label for="Playa">Playa</label><input id="Playa" type="checkbox" name="Playa" value="Playa">
+            <label for="Montania">Montaña</label><input id="Montania" type="checkbox" name="Montania" value="Montania">
+            <label for="Lago">Lago</label><input id="Lago" type="checkbox" name="Lago" value="Lago">
+            <br>
+         </fieldset>
+        <!-- Range -->
+        <label for="txtRangoPrecio">Rango de Precios </label>
+        <input min="0" max="255" id="txtRangoPrecio" type="range" name="rangoPrecio">
+        <br>
+        <!-- Lista Desplegable -->
+        <label for="pais">País de origen</label>
+        <select name="pais" id="pais">
+            <option value="">Seleccione...</option>
+            <optgroup label="America">
+                <option value="cr">Costa Rica</option>
+                <option value="nic">Nicaragua</option>
+                <option value="col">Colombia</option>
+                <option value="pan">Panamá</option>
+                <option value="usa">Estados Unidos</option>
+            </optgroup>
+            <optgroup label="Europa">
+                <option value="fr">Francia</option>
+                <option value="es">España</option>
+            </optgroup>
+            <optgroup label="Asia">
+                <option value="jp">Japón</option>
+                <option value="ch">China</option>
+            </optgroup>
+            <optgroup label="Oceania">
+                <option value="au">Australia</option>
+                <option value="fl">Filipinas</option>
+            </optgroup>
+            <optgroup label="Africa">
+                <option value="cm">Camerún</option>
+                <option value="ni">Nigeria</option>
+            </optgroup>
+        </select>
+        <br>
+        <!--boton para procesar el formulario-->
+        <input type="submit" value="Procesar">
+        <!--boton para limpiar el formulario-->
+        <input type="reset" value="Borrar">
+        <!--boton del formulario-->
+        <input type="button" value="Salir">
+    </form>
+
+</body>
+</html>

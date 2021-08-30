@@ -1,0 +1,33 @@
+h1,h2{
+    width: 100%;
+}
+
+main,
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1025px to higher resolution desktops
+*/
+
+@media (min-width: 768px) {
+
+    main,
+    footer {
+        flex-direction: row;
+    }
+
+    main section {
+        width: 50%;
+    }
+
+    #footer div {
+        width: 25%;
+    }
+}

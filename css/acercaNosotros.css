@@ -1,0 +1,92 @@
+
+#colaboradores img{
+    margin-top: 10px;
+    height: 250px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+#colaboradores div{
+    border: solid 3px black;
+    margin-bottom: 30px;
+    padding: 0 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 1px 0px 10px;
+}
+#colaboradores div h4{
+    color: #FB9D07   ;
+    border-bottom: solid 2px #FB9D07;
+    padding-bottom: 10px;
+
+}
+h2{
+    width: 100%;
+}
+main{
+    padding: 25px;
+}
+#misionVision img, #colaboradores img{
+    width: 100%;
+}
+
+
+#misionVision,#colaboradores,
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1025px to higher resolution desktops
+*/
+
+@media (min-width: 1025px) {
+
+    #misionVision,#colaboradores,
+    footer {
+        flex-direction: row;
+    }
+
+    #misionVision div {
+        width: 35%;
+    }
+
+    #footer div {
+        width: 25%;
+    }
+    #colaboradores div{
+        width: 25%;
+    }
+}
+
+
+/* 
+    ##Device = Tablets
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #misionVision,footer,#colaboradores {
+        flex-direction: row;
+    }
+
+    #misionVision div {
+        width: 40%;
+    }
+
+    #footer div,#colaboradores div {
+        width: 40%;
+    }
+   
+
+}

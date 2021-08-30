@@ -1,0 +1,61 @@
+.galeriaContainer{
+    margin: 0 auto;
+    width: 80%;
+    background: rgba(223, 220, 220, 0.664);
+    text-align: center;
+}
+.galeriaContainer img{
+    width: 300px;
+    height: 300px;
+}
+
+.rotate{
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+}
+.rotatex{
+    transform: rotateX(70deg);
+    -webkit-transform: rotateX(70deg);
+    -moz-transform: rotateX(70deg);
+    -ms-transform: rotateX(70deg);
+    -o-transform: rotateX(70deg);
+}
+.rotatey{
+    transform: rotateY(70deg);
+    -webkit-transform: rotateY(70deg);
+    -moz-transform: rotateY(70deg);
+    -ms-transform: rotateY(70deg);
+    -o-transform: rotateY(70deg);
+}
+.scale{
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+}
+.skew{
+    transform: skew(10deg);
+    -webkit-transform: skew(10deg);
+    -moz-transform: skew(10deg);
+    -ms-transform: skew(10deg);
+    -o-transform: skew(10deg);
+}
+.hueRotate{
+    filter: hue-rotate(180deg);
+    -webkit-filter: hue-rotate(180deg);
+}
+.invert{
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+.translate{
+    transform: translate(100px);
+    -webkit-transform: translate(100px);
+    -moz-transform: translate(100px);
+    -ms-transform: translate(100px);
+    -o-transform: translate(100px);
+}

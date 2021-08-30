@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- comentario - define el tipo de documento -->
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Rolando Sequeira Víctor">
+        <meta name="description" content="Página principal de Comic Con, donde puedes comprar las mejores comic del país">
+        <meta name="keywords" content="Costa Rica, Comics, Manga, Anime, Figuras de acción">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comic App</title>
+    </head>
+    <body>
+        <!--contenido de la página-->
+        <header>
+             <!--menu principal de la página-->
+             <nav>
+                 <a href="index.html"><img width="100" src="img/logo.png" alt="Logo de la empresa"></a>
+                <ul>
+                    <li><a href="index.html">Principal</a></li>
+                    <li><a href="acercaNosotros.html">Acerca de Nosotros</a></li>
+                    <li><a href="definiciones.html">Definiciones</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="contactenos.html">Contáctenos</a></li>
+                    <li><a target="_blank" href="http://www.censa.cr">Censa Tec</a></li>
+                </ul> 
+            </nav>
+        </header>
+        <!--información principal de la página-->
+        <main>
+            <form action="filtrar.html" method="POST">
+                <div>
+                    <h2>Categorías</h2>
+                    <input type="checkbox" name="mujeres" id="mujeres">
+                    <label for="mujeres">mujeres</label> <br>
+                    <input type="checkbox" name="hombres" id="hombres">
+                    <label for="hombres">hombres</label> <br>
+                    <input type="checkbox" name="ninios" id="ninios">
+                    <label for="ninios">niños</label> <br>
+                </div>
+                <div>
+                    <label for="precio">Precio</label> <br>
+                    <input min="0" type="range" name="precio" id="precio">
+                    <p>Precio entre ¢0 y ¢<span id="precioMax">3500</span></p>
+                </div>
+                <div>
+                    <h2>Estado</h2>
+                     <input value="promo" type="radio" name="estado" id="promocion">
+                    <label for="promocion">Promoción</label>
+                    <br>
+                    <input value="liqui" type="radio" name="estado" id="liquidacion">
+                    <label for="liquidacion">Liquidación</label>
+                    
+                </div>
+
+                <div>
+                    <input type="submit" value="Filtrar">
+                   
+                </div>
+               
+            </form>
+        </main>
+
+        <!--pie del cuerpo-->
+        <footer>
+            <div>
+                <h4>Categorías</h4>
+                <ul>
+                    <li><a href="">Calcomanías</a></li>
+                    <li><a href="">Manga</a></li>
+                    <li><a href="">Comic</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Ayuda</h4>
+                <ul>
+                    <li><a href="">Politica de Privacidad</a></li>
+                    <li><a href="">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Sobre Nosotros</h4>
+                <ul>
+                    <li><a href="acercaNosotros.html#origen">Origenes</a></li>
+                    <li><a href="acercaNosotros.html#consolidacion">Consolidación</a></li>
+                    <li><a href="acercaNosotros.html#colaboradores">Colaboradores</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Redes Sociales</h4>
+                <ul>
+                    <li><a target="_blank" href="https://www.facebook.com/CasaManga">Facebook</a></li>
+                    <li><a target="_blank" href="http://www.twitter.com">Twitter</a></li>
+                    <li><a target="_blank" href="http://www.instagram.com">Instagram</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

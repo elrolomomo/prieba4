@@ -1,0 +1,64 @@
+iframe {
+    height: 100vh;
+    width: 100%;
+}
+
+#contacto,
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1025px to higher resolution desktops
+*/
+
+@media (min-width: 1025px) {
+
+    #contacto,
+    footer {
+        flex-direction: row;
+    }
+
+    #contacto div {
+        width: 50%;
+    }
+
+    #footer div {
+        width: 25%;
+    }
+    .mapa{
+        width: 100% !important;
+    }
+}
+
+
+/* 
+    ##Device = Tablets
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    #contacto,
+    footer {
+        flex-direction: row;
+    }
+
+    #contacto div {
+        width: 50%;
+    }
+
+    #footer div {
+        width: 25%;
+    }
+    .mapa{
+        width: 100% !important;
+    }
+
+
+}
